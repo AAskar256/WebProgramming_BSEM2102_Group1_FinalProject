@@ -1,0 +1,49 @@
+# Sierra Leone Football Agency - Apache Configuration
+Options -Indexes
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect all errors to index.php
+ErrorDocument 404 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 500 /index.php
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Prevent access to sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "(\.sql|\.log|\.env)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow static files
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|mp4|webm|ogg)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# If using SQLite, protect the database file
+<Files "football_agency.db">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Force HTTPS (uncomment when using SSL)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Pretty URLs - Optional
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php?path=$1 [QSA,L]

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sierra Leone Football Agency - About Us</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Additional styles to remove text beside images */
+      .player-img,
+      .leadership-img {
+        position: relative;
+        min-height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: #000; /* Dark background for contrast */
+      }
+      
+      /* FIXED: Changed object-fit to contain to show full faces */
+      .player-img img,
+      .leadership-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Changed from 'cover' to 'contain' */
+      }
+      
+      /* Completely hide the img-placeholder text */
+      .img-placeholder {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">SL<span>Football</span>Agency</div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="players.html">Players</a></li>
+              <li><a href="matches.html">Matches</a></li>
+              <li><a href="aboutus.html" class="active">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="players-header">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>Learn more about Sierra Leone Football Agency and our mission</p>
+      </div>
+    </section>
+
+    <section class="section" id="history">
+      <div class="container">
+        <h2 class="section-title">History</h2>
+        <div class="about-content">
+          <p>
+            Since our establishment, Sierra Leone Football Agency has been
+            making significant headway in developing football talent across the
+            nation. We have successfully placed over 50 players in professional
+            clubs both locally and internationally.
+          </p>
+          <p>
+            Our progressive approach to player development and strategic
+            partnerships has positioned us as a leading force in West African
+            football management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="leadership">
+      <div class="container">
+        <h2 class="section-title">Leadership</h2>
+        <div class="content-grid">
+          <div class="card">
+            <div class="card-img leadership-img">
+              <img
+                src="../images/President.jpeg"
+                alt="Babadi Kamara - President"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Babadi Kamara</h3>
+              <p class="position">President</p>
+              <p>
+                He is the president of the Sierra Leone Football Association.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img leadership-img">
+              <img
+                src="../images/Vice president.jpeg"
+                alt="Alie Tarawallie - Vice President"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Alie Tarawallie</h3>
+              <p class="position">Vice President (SLFA)</p>
+              <p>Vice President of the Sierra Leone Football Association.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img leadership-img">
+              <img
+                src="../images/Head coach.jpeg"
+                alt="Mohamed Kallon - Head Coach"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Mohamed Kallon</h3>
+              <p class="position">Head Coach</p>
+              <p>Head of the Sierra Leone Leone Star (men's national team).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="values">
+      <div class="container">
+        <h2 class="section-title">Our Values</h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Integrity</h3>
+            <p>
+              We maintain the highest ethical standards in all our dealings with
+              players, clubs, and partners.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Excellence</h3>
+            <p>
+              We strive for excellence in player development, representation,
+              and career management.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Development</h3>
+            <p>
+              We are committed to the holistic development of our players, both
+              on and off the field.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Community</h3>
+            <p>
+              We believe in giving back to the community and supporting
+              grassroots football development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="container">
+        <h2 class="section-title">Our Achievements</h2>
+        <div class="achievements-content">
+          <div class="achievement-stats">
+            <div class="stat-item">
+              <h3>50+</h3>
+              <p>Players Placed</p>
+            </div>
+            <div class="stat-item">
+              <h3>15+</h3>
+              <p>International Clubs</p>
+            </div>
+            <div class="stat-item">
+              <h3>10+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Player Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@slfootballagency.com</p>
+            <p>Phone: +232 34 498656</p>
+            <p>Address: 68 Wilkinson Street, Freetown, Sierra Leone</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="players.html">Players</a></p>
+            <p><a href="matches.html">Matches</a></p>
+            <p><a href="aboutus.html">About Us</a></p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">YouTube</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2023 Sierra Leone Football Agency Limited. All rights reserved.
+          </p>
+          <p>www.SLFootballAgencyLimited.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Remove image fallback functionality since we're removing text placeholders
+      document.addEventListener('DOMContentLoaded', function() {
+        // Remove all img-placeholder elements if they exist
+        const placeholders = document.querySelectorAll('.img-placeholder');
+        placeholders.forEach(placeholder => {
+          placeholder.remove();
+        });
+        
+        // Add error handling for images
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+          img.addEventListener('error', function() {
+            this.style.display = 'none';
+            // No placeholder will be shown
+          });
+          
+          // Check if image loaded successfully on page load
+          if (img.complete && img.naturalHeight === 0) {
+            // Image failed to load
+            img.style.display = 'none';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
